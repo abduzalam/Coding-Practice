@@ -24,4 +24,6 @@ def lengthof_longest_substring_with_no_repeat(instr):
             
 def main():
     print("length of longest substring with no repeat = "+str(lengthof_longest_substring_with_no_repeat("aabccbb")))
+    print("length of longest substring with no repeat = "+str(lengthof_longest_substring_with_no_repeat("abbbb")))
+    print("length of longest substring with no repeat = "+str(lengthof_longest_substring_with_no_repeat("abccde")))
 main()
