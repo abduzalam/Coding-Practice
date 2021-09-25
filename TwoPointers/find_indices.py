@@ -14,4 +14,23 @@ Example 2:
 Input: [2, 5, 9, 11], target=11
 Output: [0, 2]
 Explanation: The numbers at index 0 and 2 add up to 11: 2+9=11
+
+Preffered solution
 '''
+def find_indices(arr,target):
+    #pass
+    nums = {}
+    
+    for i,num in enumerate(arr):
+        if target - num in nums:
+            return[nums[target-num],i]
+        else:
+            nums[arr[i]]=i
+    return[-1,-1]
+
+    
+        
+def main():
+    print("indices of target sum =" +str(find_indices([1,2,3,4,6],6)))
+    print("indices of target sum =" +str(find_indices([2,5,9,11],11)))
+main()
